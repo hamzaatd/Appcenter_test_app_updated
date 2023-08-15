@@ -19,15 +19,24 @@ public class MainActivity extends AppCompatActivity {
         AppCenter.start(getApplication(), "bd8025af-680b-4815-ac04-2ac9b9b2a98c",
                 Analytics.class, Crashes.class);
 
-        Toast.makeText(MainActivity.this, "this is dev branch ", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "this is feature-1 branch ", Toast.LENGTH_SHORT).show();
           add();
-
+          subtract();
+        Toast.makeText(MainActivity.this, "this is feature-1 branch added subtract function ", Toast.LENGTH_SHORT).show();
     }
 
     void add(){
         int x =10;
         int y =20;
         int h =x+y;
+        System.out.println(""+h);
+
+    }
+
+    void subtract(){
+        int x =10;
+        int y =20;
+        int h =x-y;
         System.out.println(""+h);
 
     }
